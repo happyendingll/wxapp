@@ -36,7 +36,10 @@
     "packNpmRelationList": [],
     "minifyWXSS": true,
     "showES6CompileOption": false,
-    "minifyWXML": true
+    "minifyWXML": true,
+    "useCompilerPlugins": [
+      "sass"
+    ]
   },
   "compileType": "miniprogram",
   "libVersion": "2.19.4",

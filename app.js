@@ -1,5 +1,7 @@
 // app.js
+import { colorUI } from './MP-CU/config/ColorUI'
 App({
+  colorUI,        //挂载到app上，此步骤必须要有！
   onLaunch() {
     // 展示本地存储能力
     const logs = wx.getStorageSync('logs') || []

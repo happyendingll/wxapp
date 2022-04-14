@@ -20,4 +20,6 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
+  <button class="ui-btn">按钮</button>
+  <button class="ui-btn bg-orange">按钮</button>
 </view>
