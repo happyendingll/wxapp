@@ -1,0 +1,4 @@
+<!--pages/welcome.wxml-->
+<ui-sys>
+  <image src='/static/img/WechatIMG35.jpeg' style="height: 100vh; width: 100vw; object-fit: cover;" bindtap="goHome"></image>
+</ui-sys>
