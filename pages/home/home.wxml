@@ -1,2 +1,4 @@
-<view>Home</view>
-<button class="ui-btn">按钮</button>
+<ui-sys title = '我的'img='/static/img/4put2.png'>
+  <view>Home</view>
+  <button class="ui-btn">按钮</button>
+</ui-sys>
