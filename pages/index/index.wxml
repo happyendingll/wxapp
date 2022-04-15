@@ -22,4 +22,5 @@
   </view>
   <button class="ui-btn">按钮</button>
   <button class="ui-btn bg-orange">按钮</button>
+  <button class="animate__animated animate__bounce">我在跳</button>
 </view>
