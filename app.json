@@ -18,13 +18,19 @@
   "tabBar": {
     "list": [{
       "pagePath": "pages/index/index",
-      "text": "index"
+      "text": "index",
+      "iconPath": "/static/tab_icon/custom.png",
+      "selectedIconPath": "/static/tab_icon/custom_cur.png"
     }, {
       "pagePath": "pages/logs/logs",
-      "text": "日志"
+      "text": "日志",
+      "iconPath": "/static/tab_icon/document.png",
+      "selectedIconPath": "/static/tab_icon/document_cur.png"
     },{
       "pagePath": "pages/home/home",
-      "text": "home"
+      "text": "home",
+      "iconPath": "/static/tab_icon/my.png",
+      "selectedIconPath": "/static/tab_icon/my_cur.png"
     }]
   }
 }
