@@ -23,4 +23,10 @@ Page({
           check: e.detail
       })
   },
+  loginSubmit(){
+    console.log('login');
+    wx.switchTab({
+      url: '/pages/index/index',
+    })
+  }
 })
