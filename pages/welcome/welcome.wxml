@@ -1,4 +1,7 @@
 <!--pages/welcome.wxml-->
 <ui-sys>
-<view class="welcome" bindtap="goHome"></view>
+<view class="welcome" bindtap="goHome">
+<button class="button1 animate__animated animate__rotateInDownLeft animate__delay-2s">图标</button>
+<button class="button2 animate__animated animate__bounceInLeft animate__delay-2s">图标</button>
+</view>
 </ui-sys>
