@@ -1,8 +1,10 @@
 {
   "pages": [
-    "pages/index/index",
+    "pages/welcome/welcome",
     "pages/home/home",
-    "pages/logs/logs"
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/login/login"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -13,24 +15,58 @@
   },
   "sitemapLocation": "sitemap.json",
   "usingComponents": {
-    "ui-sys": "./MP-CU/mp-cu/colorUI/components/ui-sys/ui-sys"
+    "ui-sys": "/MP-CU/mp-cu/colorUI/components/ui-sys/ui-sys",
+    "ui-title": "/MP-CU/mp-cu/colorUI/components/ui-title/ui-title",
+    "ui-code": "/MP-CU/mp-cu/colorUI/components/ui-code/ui-code",
+        "ui-loading": "/MP-CU/mp-cu/colorUI/components/ui-loading/ui-loading",
+        "ui-menu": "/MP-CU/mp-cu/colorUI/components/ui-menu/ui-menu",
+        "ui-menu-item": "/MP-CU/mp-cu/colorUI/components/ui-menu-item/ui-menu-item",
+        "ui-avatar": "/MP-CU/mp-cu/colorUI/components/ui-avatar/ui-avatar",
+        "ui-avatar-stack": "/MP-CU/mp-cu/colorUI/components/ui-avatar-stack/ui-avatar-stack",
+        "ui-modal": "/MP-CU/mp-cu/colorUI/components/ui-modal/ui-modal",
+        "ui-toast": "/MP-CU/mp-cu/colorUI/components/ui-toast/ui-toast",
+        "ui-switch": "/MP-CU/mp-cu/colorUI/components/ui-switch/ui-switch",
+        "ui-radio-group": "/MP-CU/mp-cu/colorUI/components/ui-radio-group/ui-radio-group",
+        "ui-radio": "/MP-CU/mp-cu/colorUI/components/ui-radio/ui-radio",
+        "ui-card": "/MP-CU/mp-cu/colorUI/components/ui-card/ui-card",
+        "ui-fixed": "/MP-CU/mp-cu/colorUI/components/ui-fixed/ui-fixed",
+        "ui-img": "/MP-CU/mp-cu/colorUI/components/ui-img/ui-img",
+        "ui-navbar": "/MP-CU/mp-cu/colorUI/components/ui-navbar/ui-navbar",
+        "ui-swiper": "/MP-CU/mp-cu/colorUI/components/ui-swiper/ui-swiper",
+        "ui-text-size": "/MP-CU/mp-cu/colorUI/components/ui-text-size/ui-text-size",
+        "ui-tag": "/MP-CU/mp-cu/colorUI/components/ui-tag/ui-tag",
+        "ui-progress": "/MP-CU/mp-cu/colorUI/components/ui-progress/ui-progress",
+        "ui-tab": "/MP-CU/mp-cu/colorUI/components/ui-tab/ui-tab",
+        "ui-popover" : "/MP-CU/mp-cu/colorUI/components/ui-popover/ui-popover",
+        "ui-steps" : "/MP-CU/mp-cu/colorUI/components/ui-steps/ui-steps",
+        "ui-form" : "/MP-CU/mp-cu/colorUI/components/ui-form/ui-form",
+        "ui-form-group" : "/MP-CU/mp-cu/colorUI/components/ui-form-group/ui-form-group",
+        "ui-input-box" : "/MP-CU/mp-cu/colorUI/components/ui-input-box/ui-input-box",
+        "ui-checkbox" : "/MP-CU/mp-cu/colorUI/components/ui-checkbox/ui-checkbox",
+        "ui-checkbox-group" : "/MP-CU/mp-cu/colorUI/components/ui-checkbox-group/ui-checkbox-group",
+        "ui-change-theme": "/MP-CU/mp-cu/colorUI/components/ui-change-theme/ui-change-theme",
+        "ui-parameter" : "/MP-CU/mp-sdk/components/ui-parameter/ui-parameter"
   },
   "tabBar": {
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "index",
-      "iconPath": "/static/tab_icon/custom.png",
-      "selectedIconPath": "/static/tab_icon/custom_cur.png"
-    }, {
-      "pagePath": "pages/logs/logs",
-      "text": "日志",
-      "iconPath": "/static/tab_icon/document.png",
-      "selectedIconPath": "/static/tab_icon/document_cur.png"
-    },{
-      "pagePath": "pages/home/home",
-      "text": "home",
-      "iconPath": "/static/tab_icon/my.png",
-      "selectedIconPath": "/static/tab_icon/my_cur.png"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "index",
+        "iconPath": "/static/tab_icon/custom.png",
+        "selectedIconPath": "/static/tab_icon/custom_cur.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志",
+        "iconPath": "/static/tab_icon/document.png",
+        "selectedIconPath": "/static/tab_icon/document_cur.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "home",
+        "iconPath": "/static/tab_icon/my.png",
+        "selectedIconPath": "/static/tab_icon/my_cur.png"
+      }
+    ]
   }
 }
