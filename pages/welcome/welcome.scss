@@ -7,10 +7,29 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  .camera{
+    margin-top: 608rpx;
+    width: 120rpx;
+    height: 120rpx;
+  }
+  .welcome_title{
+    margin-top: 60rpx;
+    font:30rpx PingFangSC-regular;
+    color:white
+  }
+  .welcome_btn{
+    margin-top: 60rpx;
+    width: 108rpx;
+    height: 108rpx;
+    border-radius: 50%;
+    background-color: rgba(232, 52, 52, 100);
+    box-shadow: 0px 0px 50px 0px rgba(232, 52, 52, 61);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .text-xxl{
+      color: white;
+    }
+  }
 }
-.button1{
-  margin-top: 608rpx;
-}
-.button2{
-  margin-top: 162rpx;
-}
+

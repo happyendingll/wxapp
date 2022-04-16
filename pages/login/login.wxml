@@ -1,71 +1,48 @@
-<ui-sys bg="ui-BG" footer="{{false}}">
-    <ui-navbar back isCenter>
-        <text slot="center">登录</text>
-    </ui-navbar>
-    <view class="p-5">
-        <view class="text-xxl">
-            <view class="text-bold py-2">欢迎登录ColorUI组件库</view>
+<!--pages/login/login2.wxml-->
+<ui-sys>
+    <view class="login">
+        <view class="login-navBar">
+            <view class="login-left_arrow">
+            <text class="iconfont icon-a-HalfArrowLeft" style="width=100%; height=100%"></text>
+            </view>
         </view>
-        <view class="mt-5">
-            <ui-tab value="{{tabCur}}" tab="{{['帐号户登录', '验证码登录']}}" tpl="long" dot="radius"
-                    textCur="text-lg" text="text-lg" bind:change="tabNavChange"/>
-        </view>
-        <block wx:if="{{tabCur === 0}}">
-            <ui-form ui="ui-BG mt-4">
-                <ui-form-group icon="cicon-avatar text-gray">
+        <view class="login-title animate__animated animate__zoomIn animate__delay-1s">欢迎来到摄图</view>
+        <view class="login-phone animate__animated animate__slideInUp animate__delay-1s" >
+            <ui-form ui="ui-BG mt-4 ">
+                <ui-form-group icon="cicon-mobile-o">
                     <ui-input-box>
-                        <input class="ui-input-wrapper" value="{{account.phone}}" placeholder="帐号户名/手机号"/>
-                    </ui-input-box>
-                </ui-form-group>
-                <ui-form-group icon="cicon-safe-check text-gray">
-                    <ui-input-box isType="password">
-                        <input class="ui-input-wrapper" type="password" value="{{account.password}}" placeholder="帐号户密码"/>
+                        <input class="ui-input-wrapper" placeholder="请输入手机号码"/>
                     </ui-input-box>
                 </ui-form-group>
             </ui-form>
-        </block>
-        <block wx:if="{{tabCur === 1}}">
+        </view>
+        <view class="login-password animate__animated animate__slideInUp animate__delay-1s">
             <ui-form ui="ui-BG mt-4">
-                <ui-form-group icon="cicon-mobile text-gray">
+                <ui-form-group icon="cicon-safe-key-o" isAction>
                     <ui-input-box>
-                        <input class="ui-input-wrapper" value="{{login.phone}}" placeholder="手机号"/>
-                    </ui-input-box>
-                </ui-form-group>
-                <ui-form-group icon="cicon-numcode text-gray" isAction>
-                    <ui-input-box>
-                        <input class="ui-input-wrapper" value="{{login.code}}" placeholder="验证码"/>
+                        <input class="ui-input-wrapper" placeholder="请输入验证码"/>
                     </ui-input-box>
                     <view slot="action">
-                        <button class="ui-btn bg-blue-gradient sm">发送验证码</button>
+                        <button class="ui-btn bg-black sm radius-lg">发送验证码</button>
                     </view>
                 </ui-form-group>
             </ui-form>
-        </block>
-        <view class="my-3">
-            <ui-checkbox value="{{check}}" bind:change="checkChange">我已阅读并接受</ui-checkbox>
         </view>
-        <view class="mt-5">
-            <button class="ui-btn bg-blue-gradient radius lg block shadow-blue" bindtap="loginSubmit" disabled="{{isLoading}}">
-                <text>登录</text>
-                <text class="cicon-loading1 icon-spin ml-3" wx:if="{{isLoading}}"/>
-            </button>
+        <view class="login-tips">
+            <text>未注册的手机号验证后自动创建摄图账号</text>
         </view>
-        <view class="flex-bar mt-4">
-            <view class="p-3">忘记密码？</view>
-            <view class="p-3">
-                <text>立即注册</text>
-                <text class="cicon-round-angle-o ml-3"/>
+        <view class="login-btn animate__animated animate__slideInUp animate__delay-1s" >
+            <button class="radius-lg bg-black">登录</button>
+        </view>
+        <view class="login-thirdPartyLogin animate__animated animate__slideInUp animate__delay-1s">
+            <view class="login-weixin">
+                <text class="iconfont icon-weixin text-xxl"/>
+                <text>微信</text>
+            </view>
+            <view class="login-qq">
+                <text class="iconfont icon-qq1 text-xxl"/>
+                <text>qq</text>
             </view>
         </view>
-        <ui-fixed bottom>
-            <view class="p-5">
-                <ui-title title="其他登录方式" align="center" hasLine tpl="center-column"/>
-                <button class="ui-btn bg-green-gradient radius lg block shadow-green" bindtap="wxloginSubmit" disabled="{{isLoading}}">
-                    <text class="cicon-weixin icon-xl mr-3"/>
-                    <text>微信一键登录</text>
-                    <text class="cicon-loading1 icon-spin ml-3" wx:if="{{wxisLoading}}"/>
-                </button>
-            </view>
-        </ui-fixed>
     </view>
 </ui-sys>

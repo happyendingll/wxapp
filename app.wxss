@@ -1,6 +1,7 @@
 @import './MP-CU/mp-cu/colorUI/scss/ui';
 @import './MP-CU/mp-sdk/icon/doc';
 @import './utils/css/animate.wxss';
+@import './utils/css/iconfont.wxss';
 .container {
   height: 100%;
   display: flex;
